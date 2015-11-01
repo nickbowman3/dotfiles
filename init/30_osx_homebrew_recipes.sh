@@ -31,6 +31,7 @@ recipes=(
   spark
   z
   ack
+  zsh
 )
 
 brew_install_recipes
