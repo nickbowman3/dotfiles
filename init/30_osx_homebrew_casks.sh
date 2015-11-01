@@ -5,7 +5,11 @@ is_osx || return 1
 [[ ! "$(type -P brew)" ]] && e_error "Brew casks need Homebrew to install." && return 1
 
 # Ensure the cask keg and recipe are installed.
-kegs=(caskroom/cask)
+kegs=(
+  caskroom/cask 
+  caskroom/versions
+)
+
 brew_tap_kegs
 recipes=(brew-cask)
 brew_install_recipes
@@ -19,72 +23,31 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
-  1password
-  a-better-finder-rename
-  aluxian-messenger
-  battle-net
-  bettertouchtool
-  charles
-  chromium
-  chronosync
   dropbox
-  duet
-  easysimbl
-  fastscripts
   firefox
   google-chrome
-  gyazo
-  hermes
-  hex-fiend
   iterm2
-  karabiner
-  launchbar
   macvim
-  menumeters
-  midi-monitor
-  moom
-  omnidisksweeper
-  race-for-the-galaxy
-  reaper
   remote-desktop-connection
-  scroll-reverser
-  seil
-  sharemouse
   skype
-  slack
-  sonos
   sourcetree
-  spotify
-  star-realms
-  steam
-  synology-assistant
-  teamspeak-client
   teamviewer
   the-unarchiver
-  todoist
-  totalfinder
-  tower
-  transmission-remote-gui
-  vagrant
-  virtualbox
   vlc
-  ynab
   # Drivers
-  d235j-xbox360-controller-driver
-  # Quick Look plugins
-  betterzipql
-  qlcolorcode
-  qlmarkdown
-  qlprettypatch
-  qlstephen
-  quicklook-csv
-  quicklook-json
-  quicknfo
-  suspicious-package
-  webpquicklook
-  # Color pickers
-  colorpicker-developer
-  colorpicker-skalacolor
+  # d235j-xbox360-controller-driver
+  sublime-text3
+  ibackup
+  lickr-uploadr
+  pycharm-ce
+  anaconda
+  disk-inventory-x
+  google-photos-backup
+  mysqlworkbench
+  rstudio
+  amazon-cloud-drive
+  dash
+  postgres
 )
 
 # Install Homebrew casks.
