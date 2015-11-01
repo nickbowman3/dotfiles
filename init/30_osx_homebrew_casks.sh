@@ -38,7 +38,8 @@ casks=(
   # d235j-xbox360-controller-driver
   sublime-text3
   ibackup
-  lickr-uploadr
+  flickr-uploadr
+  java6
   pycharm-ce
   anaconda
   disk-inventory-x
@@ -55,7 +56,7 @@ casks=($(setdiff "${casks[*]}" "$(brew cask list 2>/dev/null)"))
 if (( ${#casks[@]} > 0 )); then
   e_header "Installing Homebrew casks: ${casks[*]}"
   for cask in "${casks[@]}"; do
-    brew cask install $cask
+    brew cask install $cask --appdir=/Applications
   done
   brew cask cleanup
 fi
