@@ -32,6 +32,8 @@ recipes=(
   z
   ack
   zsh
+  tmux
+  reattach-to-user-namespace
 )
 
 brew_install_recipes
