@@ -42,7 +42,7 @@ casks=(
   flickr-uploadr
   java6
   pycharm-ce
-  anaconda
+  anaconda2
   disk-inventory-x
   google-photos-backup
   mysqlworkbench
