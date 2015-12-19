@@ -32,7 +32,7 @@ recipes=(
   z
   ack
   zsh
-  r
+  r --env=std
   tmux
   reattach-to-user-namespace
 )
