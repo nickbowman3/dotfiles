@@ -32,6 +32,7 @@ recipes=(
   z
   ack
   zsh
+  r
   tmux
   reattach-to-user-namespace
 )
